@@ -14,7 +14,11 @@ function startTimer(duration, display) {
         seconds = seconds < 10 ? "0" + seconds : seconds;
 
         if (--timer < 0) {
+            //make the timer loop when over
             timer = duration;
+            //make the timer stay at 0 when over
+            //minutes = 00
+            //seconds = 00
         }
          const el = loopic.getElement("_time");
     el.domNode.innerHTML = minutes + ":" + seconds;
