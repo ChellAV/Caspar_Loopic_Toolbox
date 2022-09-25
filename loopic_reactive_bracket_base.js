@@ -1,3 +1,5 @@
+//put this in Loopic Action, this is only for one match, you need to adapt it to the tournament you wanna produce
+
 loopic.useOnUpdate("_t1score", (dynamicId, value, next) => {
    checkScores();
 });
